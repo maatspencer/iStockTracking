@@ -1,0 +1,234 @@
+	 SELECT * FROM yahoo.finance.cashflow WHERE symbol='T'
+	 
+	 "results": {
+   "cashflow": {
+    "symbol": "T",
+    "timeframe": "quarterly"
+	
+	select * from yahoo.finance.dividendhistory where symbol = "KO" and startDate = "1962-01-01" and endDate = "2013-12-31"
+	
+	    {
+     "Symbol": "KO",
+     "Date": "1979-03-13",
+     "Dividends": "0.010210"
+    },
+    {
+     "Symbol": "KO",
+     "Date": "1978-11-27",
+     "Dividends": "0.009060"
+    },
+    {
+     "Symbol": "KO",
+     "Date": "1978-09-08",
+     "Dividends": "0.009060"
+    },
+    {
+     "Symbol": "KO",
+     "Date": "1978-06-12",
+     "Dividends": "0.009060"
+    },
+	
+	
+	select * from yahoo.finance.historicaldata where symbol = "YHOO" and startDate = "2009-09-11" and endDate = "2010-03-10"
+	
+	    {
+     "Symbol": "YHOO",
+     "Date": "2010-03-08",
+     "Open": "16.32",
+     "High": "16.610001",
+     "Low": "16.299999",
+     "Close": "16.52",
+     "Volume": "30554000",
+     "Adj_Close": "16.52"
+    },
+    {
+     "Symbol": "YHOO",
+     "Date": "2010-03-05",
+     "Open": "15.89",
+     "High": "16.379999",
+     "Low": "15.89",
+     "Close": "16.059999",
+     "Volume": "21415000",
+     "Adj_Close": "16.059999"
+    },
+    {
+     "Symbol": "YHOO",
+     "Date": "2010-03-04",
+     "Open": "15.55",
+     "High": "15.85",
+     "Low": "15.52",
+     "Close": "15.81",
+     "Volume": "22906000",
+     "Adj_Close": "15.81"
+    },
+	
+	select * from yahoo.finance.industry where id="112"
+	
+	{
+      "name": "Agrium\nInc",
+      "symbol": "AGU.DE"
+     },
+     {
+      "name": "Agrium\nInc",
+      "symbol": "AGU.TO"
+     },
+     {
+      "name": "Agrium\nInc.",
+      "symbol": "AGU"
+     },
+     {
+      "name": "Aimco\nPesticides Ltd",
+      "symbol": "AIMCO.BO"
+     },
+     {
+      "name": "American\nVanguard Corp.",
+      "symbol": "AVD"
+     },
+     {
+      "name": "Arcadia\nBiosciences, Inc.",
+      "symbol": "RKDA"
+     },
+	 
+	 select * from yahoo.finance.quant where symbol in ("YHOO")
+	 
+	   "results": {
+   "stock": {
+    "symbol": "YHOO",
+    "ReturnOnEquity": null,
+    "Stockholders": "33,658,896",
+    "TotalAssets": "50,491,706",
+    "TrailingPE": null,
+    "Analysts": null,
+    "EarningsGrowth": null,
+    "EbitMarge": null,
+    "LastYear": null,
+    "SixMonths": null,
+    "Today": null,
+    "LastMonth": null,
+    "TwoMonthsAgo": null,
+    "ThreeMonthsAgo": null,
+    "FourMonthsAgo": null,
+    "CompanyName": null
+   }
+   
+   select * from yahoo.finance.quotes where symbol in ("YHOO","AAPL","GOOG","MSFT")
+   
+       {
+     "symbol": "YHOO",
+     "Ask": "39.90",
+     "AverageDailyVolume": "13986600",
+     "Bid": "39.77",
+     "AskRealtime": null,
+     "BidRealtime": null,
+     "BookValue": "35.91",
+     "Change_PercentChange": "+0.77 - +1.98%",
+     "Change": "+0.77",
+     "Commission": null,
+     "Currency": "USD",
+     "ChangeRealtime": null,
+     "AfterHoursChangeRealtime": null,
+     "DividendShare": null,
+     "LastTradeDate": "7/17/2015",
+     "TradeDate": null,
+     "EarningsShare": "7.32",
+     "ErrorIndicationreturnedforsymbolchangedinvalid": null,
+     "EPSEstimateCurrentYear": "0.77",
+     "EPSEstimateNextYear": "0.80",
+     "EPSEstimateNextQuarter": "0.21",
+     "DaysLow": "38.93",
+     "DaysHigh": "39.79",
+     "YearLow": "33.16",
+     "YearHigh": "52.62",
+     "HoldingsGainPercent": null,
+     "AnnualizedGain": null,
+     "HoldingsGain": null,
+     "HoldingsGainPercentRealtime": null,
+     "HoldingsGainRealtime": null,
+     "MoreInfo": null,
+     "OrderBookRealtime": null,
+     "MarketCapitalization": "37.24B",
+     "MarketCapRealtime": null,
+     "EBITDA": "598.70M",
+     "ChangeFromYearLow": "6.52",
+     "PercentChangeFromYearLow": "+19.66%",
+     "LastTradeRealtimeWithTime": null,
+     "ChangePercentRealtime": null,
+     "ChangeFromYearHigh": "-12.94",
+     "PercebtChangeFromYearHigh": "-24.59%",
+     "LastTradeWithTime": "4:00pm - <b>39.68</b>",
+     "LastTradePriceOnly": "39.68",
+     "HighLimit": null,
+     "LowLimit": null,
+     "DaysRange": "38.93 - 39.79",
+     "DaysRangeRealtime": null,
+     "FiftydayMovingAverage": "40.38",
+     "TwoHundreddayMovingAverage": "43.69",
+     "ChangeFromTwoHundreddayMovingAverage": "-4.01",
+     "PercentChangeFromTwoHundreddayMovingAverage": "-9.18%",
+     "ChangeFromFiftydayMovingAverage": "-0.70",
+     "PercentChangeFromFiftydayMovingAverage": "-1.73%",
+     "Name": "Yahoo! Inc.",
+     "Notes": null,
+     "Open": "39.19",
+     "PreviousClose": "38.91",
+     "PricePaid": null,
+     "ChangeinPercent": "+1.98%",
+     "PriceSales": "7.75",
+     "PriceBook": "1.08",
+     "ExDividendDate": null,
+     "PERatio": "5.42",
+     "DividendPayDate": null,
+     "PERatioRealtime": null,
+     "PEGRatio": "-4.08",
+     "PriceEPSEstimateCurrentYear": "51.53",
+     "PriceEPSEstimateNextYear": "49.60",
+     "Symbol": "YHOO",
+     "SharesOwned": null,
+     "ShortRatio": "2.00",
+     "LastTradeTime": "4:00pm",
+     "TickerTrend": null,
+     "OneyrTargetPrice": "53.29",
+     "Volume": "14864268",
+     "HoldingsValue": null,
+     "HoldingsValueRealtime": null,
+     "YearRange": "33.16 - 52.62",
+     "DaysValueChange": null,
+     "DaysValueChangeRealtime": null,
+     "StockExchange": "NMS",
+     "DividendYield": null,
+     "PercentChange": "+1.98%"
+    },
+	
+	select * from yahoo.finance.quote where symbol in ("YHOO","AAPL","GOOG","MSFT")
+
+"symbol": "GOOG",
+     "AverageDailyVolume": "1942810",
+     "Change": "+93.08",
+     "DaysLow": "645.00",
+     "DaysHigh": "674.47",
+     "YearLow": "486.23",
+     "YearHigh": "674.47",
+     "MarketCapitalization": "459.21B",
+     "LastTradePriceOnly": "672.93",
+     "DaysRange": "645.00 - 674.47",
+     "Name": "Google Inc.",
+     "Symbol": "GOOG",
+     "Volume": "11164943",
+     "StockExchange": "NMS"
+	 
+	 select * from yahoo.finance.stocks where symbol="yhoo"
+	 
+	   },
+  "results": {
+   "stock": {
+    "symbol": "yhoo",
+    "CompanyName": null,
+    "start": "1996-04-12",
+    "end": "2015-07-19"
+   }
+   
+   http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=nasdaq&render=download 
+   http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=amex&render=download
+   http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=nyse&render=download 
+   
+	 
