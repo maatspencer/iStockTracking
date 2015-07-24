@@ -125,21 +125,58 @@ public class dataQuery {
         return result.getContentAsString();
     }
 
-    public static List<StockType> StockMappingJson(String strQuery) throws Exception {
+    public static List<stocksType> stockToObjectArray(String strQuery) throws Exception {
         YqlQuery query = new YqlQuery(strQuery);
         query.setDiagnostics(false);
         query.setFormat(ResultFormat.JSON);
         query.useCommunityOpenDataTables();
         YqlResult result = client.query(query);
-        QueryResultType<StockArrayType> mappedResult =
+        QueryResultType<stocksArrayType> mappedResult =
                 result.getContentAsMappedObject(
-                        new TypeReference<QueryResultType<StockArrayType>>() {});
+                        new TypeReference<QueryResultType<stocksArrayType>>() {});
 
-        List<StockType> stockArr = new ArrayList<>();
-        for (StockType item : mappedResult.getResults().getStock()){
+        List<stocksType> stockArr = new ArrayList<>();
+        for (stocksType item : mappedResult.getResults().getStock()){
             stockArr.add(item);
         }
 
         return stockArr;
+    }
+
+    public static List<historicalDataType> historicalDataToObjectArray(String strQuery) throws Exception {
+        YqlQuery query = new YqlQuery(strQuery);
+        query.setDiagnostics(false);
+        query.setFormat(ResultFormat.JSON);
+        query.useCommunityOpenDataTables();
+        YqlResult result = client.query(query);
+        QueryResultType<historicalDataArrayType> mappedResult =
+                result.getContentAsMappedObject(
+                        new TypeReference<QueryResultType<historicalDataArrayType>>() {});
+
+        List<historicalDataType> historicArr = new ArrayList<>();
+        for (historicalDataType item : mappedResult.getResults().getQuote()){
+            historicArr.add(item);
+        }
+
+        return historicArr;
+    }
+
+    public static cashflowType cashflowToObject(String strQuery) throws Exception {
+        YqlQuery query = new YqlQuery(strQuery);
+        query.setDiagnostics(false);
+        query.setFormat(ResultFormat.JSON);
+        query.useCommunityOpenDataTables();
+        YqlResult result = client.query(query);
+        QueryResultType<cashflowArrayType> mappedResult =
+                result.getContentAsMappedObject(
+                        new TypeReference<QueryResultType<cashflowArrayType>>() {});
+
+        cashflowType cashflowResult = new cashflowType();
+        for (cashflowType item : mappedResult.getResults().getCashflow()){
+           cashflowResult.setSymbol(item.getSymbol());
+            cashflowResult.setTimeframe(item.getTimeframe());
+        }
+
+        return cashflowResult;
     }
 }

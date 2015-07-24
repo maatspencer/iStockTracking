@@ -15,29 +15,27 @@
  */
 package org.java.iStockTracking.yql.types;
 
-import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
-
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * This class represents an array of <code>stock</code> types used in
- * the <code>yahoo.finance.stocks</code> table.
+ * This class represents an array of the <code>cashflow</code> type used in the
+ * <code>yahoo.finance.cashflow</code> table.
  */
-public class StockArrayType {
 
-	@JacksonXmlElementWrapper(useWrapping=false)
-	private StockType[] stock;
+public class cashflowArrayType {
+
+	private cashflowType[] cashflow;
 
 	/**
-	 * @return the stock
+	 * @return the symbol
 	 */
-	public StockType[] getStock() {
-		return stock;
+	public cashflowType[] getCashflow() {
+		return cashflow;
 	}
 
 	/**
-	 * @param stock the stock to set
+	 * @param cashflow the symbol to set
 	 */
-	public void setStock(StockType[] stock) {
-		this.stock = stock;
-	}
+	@JsonProperty("cashflow")
+	public void setCashflow(cashflowType[] cashflow) { this.cashflow = cashflow;}
 }
