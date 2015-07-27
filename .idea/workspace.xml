@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8289fd4a-5d49-4924-a5b1-d15ef184c2d7" name="Default" comment="More JSON types">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/cashflowArrayType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/dividendHistoryType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/historicalDataArrayType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/historicalDataType.java" />
-      <change type="MOVED" beforePath="C:\Users\Matt\Documents\Java Projects\iStockTracking\src\org\java\iStockTracking\yql\types\Stock.java" afterPath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/cashflowType.java" />
-      <change type="MOVED" beforePath="C:\Users\Matt\Documents\Java Projects\iStockTracking\src\org\java\iStockTracking\yql\types\StockArrayType.java" afterPath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/stocksArrayType.java" />
-      <change type="MOVED" beforePath="C:\Users\Matt\Documents\Java Projects\iStockTracking\src\org\java\iStockTracking\yql\types\StockType.java" afterPath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/stocksType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/dividendHistoryArrayType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/cashflowArrayType.java" afterPath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/cashflowArrayType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/cashflowType.java" afterPath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/cashflowType.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/dataQuery.java" afterPath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/dataQuery.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/dividendHistoryType.java" afterPath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/dividendHistoryType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/historicalDataArrayType.java" afterPath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/historicalDataArrayType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/historicalDataType.java" afterPath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/historicalDataType.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/java/iStockTracking/main/programBase.java" afterPath="$PROJECT_DIR$/src/org/java/iStockTracking/main/programBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/query types.txt" afterPath="$PROJECT_DIR$/resources/query types.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/stocksArrayType.java" afterPath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/stocksArrayType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/stocksType.java" afterPath="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/stocksType.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iStockTracking.iws" />
@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/dataQuery.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="133" column="55" selection-start-line="133" selection-start-column="55" selection-end-line="133" selection-end-column="55" />
+              <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,21 +46,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dividendHistoryType.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dividendHistoryType.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/dividendHistoryType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4071856">
-              <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#689#690#0" expanded="true" />
+                <element signature="e#707#708#0" expanded="true" />
+                <element signature="e#816#817#0" expanded="true" />
+                <element signature="e#839#840#0" expanded="true" />
+                <element signature="e#958#959#0" expanded="true" />
+                <element signature="e#981#982#0" expanded="true" />
+                <element signature="e#1151#1152#0" expanded="true" />
+                <element signature="e#1184#1185#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="programBase.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/main/programBase.java">
+      <file leaf-file-name="dividendHistoryArrayType.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/dividendHistoryArrayType.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
+              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+              <folding>
+                <element signature="e#558#559#0" expanded="true" />
+                <element signature="e#577#578#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="programBase.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/main/programBase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.14057508">
+              <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -72,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/historicalDataType.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="89" column="14" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
+              <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,11 +107,11 @@
         <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/historicalDataArrayType.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+              <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#504#505#0" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
+                <element signature="e#531#532#0" expanded="true" />
+                <element signature="e#550#551#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -97,8 +120,8 @@
       <file leaf-file-name="cashflowArrayType.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/cashflowArrayType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -107,8 +130,8 @@
       <file leaf-file-name="cashflowType.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/cashflowType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -117,8 +140,8 @@
       <file leaf-file-name="stocksArrayType.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/stocksArrayType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state vertical-scroll-proportion="-15.740741">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -128,7 +151,7 @@
         <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/stocksType.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+              <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,16 +189,18 @@
         <option value="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/PlaceArrayType.java" />
         <option value="$PROJECT_DIR$/src/org/java/iStockTracking/yql/YqlClient.java" />
         <option value="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/Stock.java" />
-        <option value="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/historicalDataArrayType.java" />
         <option value="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/quoteType.java" />
-        <option value="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/cashflowType.java" />
         <option value="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/StockType.java" />
-        <option value="$PROJECT_DIR$/src/org/java/iStockTracking/main/programBase.java" />
-        <option value="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/cashflowArrayType.java" />
-        <option value="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/stocksType.java" />
         <option value="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/historicalDataType.java" />
-        <option value="$PROJECT_DIR$/src/org/java/iStockTracking/yql/dataQuery.java" />
+        <option value="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/historicalDataArrayType.java" />
         <option value="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/dividendHistoryType.java" />
+        <option value="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/cashflowArrayType.java" />
+        <option value="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/cashflowType.java" />
+        <option value="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/stocksArrayType.java" />
+        <option value="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/dividendHistoryArrayType.java" />
+        <option value="$PROJECT_DIR$/src/org/java/iStockTracking/yql/dataQuery.java" />
+        <option value="$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/stocksType.java" />
+        <option value="$PROJECT_DIR$/src/org/java/iStockTracking/main/programBase.java" />
       </list>
     </option>
   </component>
@@ -193,8 +218,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="960" />
-    <option name="height" value="1160" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1176" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -569,32 +596,32 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="960" height="1160" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32822967" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37416267" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32" sideWeight="0.4948905" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15351813" sideWeight="0.4948905" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22888888" sideWeight="0.5051095" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32822967" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37416267" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291262" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -688,8 +715,8 @@
           <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -885,74 +912,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/cashflowArrayType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="1" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/stocksArrayType.java">
+    <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/cashflowType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/historicalDataType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="89" column="14" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/historicalDataArrayType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#504#505#0" expanded="true" />
-            <element signature="e#523#524#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#550#551#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/cashflowType.java">
+    <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/dividendHistoryArrayType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="3" selection-start-line="24" selection-start-column="3" selection-end-line="24" selection-end-column="3" />
-          <folding />
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+          <folding>
+            <element signature="e#558#559#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/stocksType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/main/programBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/dataQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="133" column="55" selection-start-line="133" selection-start-column="55" selection-end-line="133" selection-end-column="55" />
+          <caret line="68" column="7" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -961,9 +961,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/dividendHistoryType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4071856">
-          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#707#708#0" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#839#840#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#981#982#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/historicalDataType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/types/stocksArrayType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.740741">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/yql/dataQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/java/iStockTracking/main/programBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14057508">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 /**
  * This class represents the <code>stock</code> type used in the
  * <code>yahoo.finance.stocks</code> table.
+ * @see stocksArrayType
  */
 public class stocksType {
 
@@ -14,9 +15,6 @@ public class stocksType {
 	private String companyName;
 	private Date start;
 	private Date end;
-	private String sector;
-	private String industry;
-	private int fullTimeEmployees;
 
 	/**
 	 * @return the symbol
@@ -73,50 +71,5 @@ public class stocksType {
 	 */
 	public void setEnd(Date end) {
 		this.end = end;
-	}
-
-	/**
-	 * @return the sector
-	 */
-	public String getSector() {
-		return sector;
-	}
-
-	/**
-	 * @param sector the sector to set
-	 */
-	@JsonProperty("Sector")
-	public void setSector(String sector) {
-		this.sector = sector;
-	}
-
-	/**
-	 * @return the industry
-	 */
-	public String getIndustry() {
-		return industry;
-	}
-
-	/**
-	 * @param industry the industry to set
-	 */
-	@JsonProperty("Industry")
-	public void setIndustry(String industry) {
-		this.industry = industry;
-	}
-
-	/**
-	 * @return the fullTimeEmployees
-	 */
-	public int getFullTimeEmployees() {
-		return fullTimeEmployees;
-	}
-
-	/**
-	 * @param fullTimeEmployees the fullTimeEmployees to set
-	 */
-	@JsonProperty("FullTimeEmployees")
-	public void setFullTimeEmployees(int fullTimeEmployees) {
-		this.fullTimeEmployees = fullTimeEmployees;
 	}
 }

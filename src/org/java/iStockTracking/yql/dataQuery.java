@@ -125,7 +125,7 @@ public class dataQuery {
         return result.getContentAsString();
     }
 
-    public static List<stocksType> stockToObjectArray(String strQuery) throws Exception {
+    public static List<stocksType> stocksToObjectArray(String strQuery) throws Exception {
         YqlQuery query = new YqlQuery(strQuery);
         query.setDiagnostics(false);
         query.setFormat(ResultFormat.JSON);
@@ -178,5 +178,23 @@ public class dataQuery {
         }
 
         return cashflowResult;
+    }
+
+    public static List<dividendHistoryType> dividendHistoryToObjectArray(String strQuery) throws Exception {
+        YqlQuery query = new YqlQuery(strQuery);
+        query.setDiagnostics(false);
+        query.setFormat(ResultFormat.JSON);
+        query.useCommunityOpenDataTables();
+        YqlResult result = client.query(query);
+        QueryResultType<dividendHistoryArrayType> mappedResult =
+                result.getContentAsMappedObject(
+                        new TypeReference<QueryResultType<dividendHistoryArrayType>>() {});
+
+        List<dividendHistoryType> dividendHistoryArr = new ArrayList<>();
+        for (dividendHistoryType item : mappedResult.getResults().getQuote()){
+            dividendHistoryArr.add(item);
+        }
+
+        return dividendHistoryArr;
     }
 }

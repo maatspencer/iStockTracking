@@ -7,6 +7,7 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 /**
  * This class represents the <code>quote</code> type used in the
  * <code>yahoo.finance.historicaldata</code> table.
+ * @see historicalDataType
  */
 public class historicalDataArrayType {
 
