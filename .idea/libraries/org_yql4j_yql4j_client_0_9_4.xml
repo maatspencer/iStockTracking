@@ -16,7 +16,6 @@
       <root url="jar://$PROJECT_DIR$/lib/jackson-databind-2.4.2.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/jackson-module-jaxb-annotations-2.4.2.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/stax2-api-3.1.4.jar!/" />
-      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.7.7.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

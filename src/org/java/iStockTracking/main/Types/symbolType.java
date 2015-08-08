@@ -37,10 +37,22 @@ public class symbolType {
     private List<historicalDataType> indexHistory;
 
     /**
-     * Data updated on a daily basis
+     * Data updated on a daily or more frequent basis
      */
     // yahoo.finance.quant
+    private long totalAssets;
+    private long stockHolders;
 
-
-
+    //yahoo.finance.quote
+    private long averageDailyVolume;
+    private String change;
+    private double daysLow;
+    private double daysHigh;
+    private double yearLow;
+    private double yearHigh;
+    private String marketCapitalization;
+    private double lastTradePriceOnly;
+    private String daysRange;
+    private long volume;
+    private String stockExchange;
 }

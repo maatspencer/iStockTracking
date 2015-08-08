@@ -11,8 +11,8 @@ package org.java.iStockTracking.yql;
 /**
  * This class defines all of the YQL queries that are made by the application.
  * @author Matt Spencer <maatspencer@gmail.com></maatspencer@gmail.com>
- * @since 2015/07/18
- * @version 0.1.0
+ * @since 2015/08/8
+ * @version 0.1.5
  */
 public class dataQuery {
 
@@ -196,5 +196,41 @@ public class dataQuery {
         }
 
         return dividendHistoryArr;
+    }
+
+    public static List<quantityType> quantityToObjectArray(String strQuery) throws Exception {
+        YqlQuery query = new YqlQuery(strQuery);
+        query.setDiagnostics(false);
+        query.setFormat(ResultFormat.JSON);
+        query.useCommunityOpenDataTables();
+        YqlResult result = client.query(query);
+        QueryResultType<quantityArrayType> mappedResult =
+                result.getContentAsMappedObject(
+                        new TypeReference<QueryResultType<quantityArrayType>>() {});
+
+        List<quantityType> quantityArr = new ArrayList<>();
+        for (quantityType item : mappedResult.getResults().getStock()){
+            quantityArr.add(item);
+        }
+
+        return quantityArr;
+    }
+
+    public static List<quoteType> quoteToObjectArray(String strQuery) throws Exception {
+        YqlQuery query = new YqlQuery(strQuery);
+        query.setDiagnostics(false);
+        query.setFormat(ResultFormat.JSON);
+        query.useCommunityOpenDataTables();
+        YqlResult result = client.query(query);
+        QueryResultType<quoteArrayType> mappedResult =
+                result.getContentAsMappedObject(
+                        new TypeReference<QueryResultType<quoteArrayType>>() {});
+
+        List<quoteType> quoteArr = new ArrayList<>();
+        for (quoteType item : mappedResult.getResults().getQuote()){
+            quoteArr.add(item);
+        }
+
+        return quoteArr;
     }
 }
