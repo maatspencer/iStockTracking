@@ -5,5 +5,5 @@ package org.iStockTracking.core;
  */
 public class globals {
     public final static String ROOT_DIR = "C:\\Program Files (x86)\\iStockTracking\\";
-    public final static String DATA_DIR = ROOT_DIR + "\\Data";
+    public final static String DATA_DIR = ROOT_DIR + "Data\\";
 }

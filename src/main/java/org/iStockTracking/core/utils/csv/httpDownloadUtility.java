@@ -18,10 +18,10 @@ public class httpDownloadUtility {
     /**
      * Downloads a file from a URL
      * @param fileURL HTTP URL of the file to be downloaded
-     * @param saveDir path of the directory to save the file
+     * @param savePath path of the directory to save the file
      * @throws IOException
      */
-    public static void downloadFile(String fileURL, String saveDir)
+    public static void downloadFile(String fileURL, String savePath)
             throws IOException {
         URL url = new URL(fileURL);
         HttpURLConnection httpConn = (HttpURLConnection) url.openConnection();
@@ -47,14 +47,16 @@ public class httpDownloadUtility {
                         fileURL.length());
             }
 
+            /**
             System.out.println("Content-Type = " + contentType);
             System.out.println("Content-Disposition = " + disposition);
             System.out.println("Content-Length = " + contentLength);
             System.out.println("fileName = " + fileName);
+             */
 
             // opens input stream from the HTTP connection
             InputStream inputStream = httpConn.getInputStream();
-            String saveFilePath = saveDir + File.separator + fileName;
+            String saveFilePath = savePath;
 
             // opens an output stream to save into file
             FileOutputStream outputStream = new FileOutputStream(saveFilePath);
@@ -68,7 +70,6 @@ public class httpDownloadUtility {
             outputStream.close();
             inputStream.close();
 
-            System.out.println("File downloaded");
         } else {
             System.out.println("No file to download. Server replied HTTP code: " + responseCode);
         }
