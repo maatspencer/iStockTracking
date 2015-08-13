@@ -22,6 +22,6 @@ public class symbolList {
     }
 
     public static void map() {
-        deserializeSymbols.process(globals.DATA_DIR + "AMEX.csv");
+        deserializeSymbols.parse(globals.DATA_DIR + "AMEX.csv");
     }
 }

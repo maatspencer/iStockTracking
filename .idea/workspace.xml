@@ -7,15 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8289fd4a-5d49-4924-a5b1-d15ef184c2d7" name="Default" comment="More JSON types">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_opencsv_opencsv_3_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/types/companyListType.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/types/deserializeSymbols.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/iStockTracking/core/globals.java" afterPath="$PROJECT_DIR$/src/main/java/org/iStockTracking/core/globals.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/httpDownloadUtility.java" afterPath="$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/httpDownloadUtility.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/iStockTracking.iml" afterPath="$PROJECT_DIR$/iStockTracking.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/iStockTracking/core/programBase.java" afterPath="$PROJECT_DIR$/src/main/java/org/iStockTracking/core/programBase.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/types/deserializeSymbols.java" afterPath="$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/types/deserializeSymbols.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/symbolList.java" afterPath="$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/symbolList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iStockTracking.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,23 +35,25 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/symbolList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1048#1049#0" expanded="true" />
+                <element signature="e#975#976#0" expanded="true" />
+                <element signature="e#1046#1047#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deserializeSymbols.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="deserializeSymbols.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/types/deserializeSymbols.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.083640836">
-              <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
               <folding>
-                <element signature="e#409#426#0" expanded="true" />
-                <element signature="e#534#551#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#660#677#0" expanded="true" />
+                <element signature="e#785#802#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="companyListType.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="companyListType.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/types/companyListType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.8360656">
               <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -150,9 +145,9 @@
         <option value="$PROJECT_DIR$/src/main/java/org/iStockTracking/core/globals.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/httpDownloadUtility.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/Map.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/symbolList.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/iStockTracking/core/programBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/types/companyListType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/symbolList.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/types/deserializeSymbols.java" />
       </list>
     </option>
@@ -694,13 +689,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33110046" sideWeight="0.48933902" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33110046" sideWeight="0.48933902" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19617225" sideWeight="0.38379532" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.11247335" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291866" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19521531" sideWeight="0.6162047" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19521531" sideWeight="0.6162047" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32344496" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17857143" sideWeight="0.4948905" order="0" side_tool="false" content_ui="combo" />
@@ -1124,34 +1119,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/types/companyListType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/symbolList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <caret line="19" column="63" selection-start-line="19" selection-start-column="63" selection-end-line="19" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1048#1049#0" expanded="true" />
+            <element signature="e#975#976#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/types/deserializeSymbols.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.083640836">
-          <caret line="4" column="56" selection-start-line="4" selection-start-column="56" selection-end-line="4" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
           <folding>
-            <element signature="e#409#426#0" expanded="true" />
-            <element signature="e#534#551#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#660#677#0" expanded="true" />
+            <element signature="e#785#802#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/iStockTracking/core/utils/csv/types/companyListType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8360656">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
