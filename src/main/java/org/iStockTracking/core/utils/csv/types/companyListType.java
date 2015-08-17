@@ -1,36 +1,80 @@
 package org.iStockTracking.core.utils.csv.types;
 
-import org.jsefa.csv.annotation.CsvDataType;
-import org.jsefa.csv.annotation.CsvField;
-
 /**
  * Created by Matt on 8/11/2015.
- */
-@CsvDataType()
+*/
 public class companyListType {
 
-    @CsvField(pos = 1)
-    String symbol;
+    private String Symbol;
+    private String Name;
+    private String LastSale;
+    private String MarketCap;
+    private String IPOyear;
+    private String Sector;
+    private String industry;
+    private String SummaryQuote;
 
-    @CsvField(pos = 2)
-    String name;
+    public String getIndustry() {
+        return industry;
+    }
 
-    @CsvField(pos = 3)
-    String lastSale;
+    public void setIndustry(String industry) {
+        this.industry = industry;
+    }
 
-    @CsvField(pos = 4)
-    String marketCap;
+    public String getIPOyear() {
+        return IPOyear;
+    }
 
-    @CsvField(pos = 5)
-    String IPOyear;
+    public void setIPOyear(String IPOyear) {
+        this.IPOyear = IPOyear;
+    }
 
-    @CsvField(pos = 6)
-    String sector;
+    public String getLastSale() {
+        return LastSale;
+    }
 
-    @CsvField(pos = 7)
-    String industry;
+    public void setLastSale(String lastSale) {
+        LastSale = lastSale;
+    }
 
-    @CsvField(pos = 8)
-    String summaryQuote;
+    public String getMarketCap() {
+        return MarketCap;
+    }
 
+    public void setMarketCap(String marketCap) {
+        MarketCap = marketCap;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public String getSector() {
+        return Sector;
+    }
+
+    public void setSector(String sector) {
+        Sector = sector;
+    }
+
+    public String getSummaryQuote() {
+        return SummaryQuote;
+    }
+
+    public void setSummaryQuote(String summaryQuote) {
+        SummaryQuote = summaryQuote;
+    }
+
+    public String getSymbol() {
+        return Symbol;
+    }
+
+    public void setSymbol(String symbol) {
+        Symbol = symbol;
+    }
 }
