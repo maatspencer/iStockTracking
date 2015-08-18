@@ -1,4 +1,4 @@
-package org.iStockTracking.core;
+package org.iStockTracking.testing;
 
 import org.iStockTracking.core.utils.yql.dataQuery;
 import org.iStockTracking.core.utils.yql.types.*;

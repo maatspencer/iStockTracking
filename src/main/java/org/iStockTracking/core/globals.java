@@ -8,6 +8,9 @@ import java.util.List;
  * Created by Matt on 8/1/2015.
  */
 public class globals {
+    public static String operatingSystem;
+    public static boolean isWindows;
+
     public final static String ROOT_DIR = "C:\\Program Files (x86)\\iStockTracking\\";
     public final static String DATA_DIR = ROOT_DIR + "Data\\";
 

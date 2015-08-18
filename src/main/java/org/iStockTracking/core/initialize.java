@@ -2,12 +2,11 @@ package org.iStockTracking.core;
 
 import org.iStockTracking.core.types.stockExchangeType;
 import org.iStockTracking.core.types.symbolType;
+import org.iStockTracking.core.utils.IO.OS;
 import org.iStockTracking.core.utils.csv.symbolList;
-import org.iStockTracking.core.utils.csv.types.companyListType;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Created by Matt on 8/16/2015.
@@ -16,11 +15,25 @@ public class initialize {
     public static void start()
         throws IOException
     {
+        // Determine Operating System Properties
+        OS.properties();
+
+        // Initialize Markets Objects
         createMarketObjects();
+
+        //HTTP GET Request for the stock symbol csv files
+        symbolList.getHTTP();
+
+        //Parse csv file to objects
+        symbolList.map();
+
+        //Sort the companyLists
+        symbolList.sort();
+
     }
 
     /**
-     * Create and Fill Market Objects
+     * Create Market Objects: globals.AMEX, globals.NYSE, and Globals.NASDAQ
      */
     private static void createMarketObjects()
             throws IOException
@@ -40,15 +53,6 @@ public class initialize {
         globals.NYSE.setName("NYSE");
         globals.NYSE.setCountry("USA");
         globals.NYSE.setCompanyList(new ArrayList<symbolType>());
-
-        //HTTP GET Request for the stock symbol csv files
-        symbolList.getHTTP();
-
-        //Parse csv file to objects
-        symbolList.map();
-
-        printMarketObjects(2);
-
     }
 
     private static void printMarketObjects(int market){

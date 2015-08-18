@@ -1,4 +1,4 @@
-package org.iStockTracking.core;
+package org.iStockTracking.testing;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

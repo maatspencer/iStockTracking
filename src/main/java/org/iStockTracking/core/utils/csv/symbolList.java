@@ -6,6 +6,8 @@ import org.iStockTracking.core.utils.IO.httpDownloadUtility;
 import org.iStockTracking.core.utils.csv.types.companyListType;
 
 import java.io.IOException;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -31,22 +33,29 @@ public class symbolList {
         //AMEX
         List<companyListType> oAMEX = deserializeSymbols.parse(globals.DATA_DIR + "AMEX.csv");
         for (int i = 0; i < oAMEX.size(); i++) {
-            symbolType x = new symbolType(oAMEX.get(i).getSymbol(),oAMEX.get(i).getName(), oAMEX.get(i).getSector(), oAMEX.get(i).getIndustry());
+            symbolType x = new symbolType(oAMEX.get(i).getSymbol().replace(" ",""),oAMEX.get(i).getName(), oAMEX.get(i).getSector(), oAMEX.get(i).getIndustry());
             globals.AMEX.getCompanyList().add(x);
         }
 
         //NYSE
         List<companyListType> oNYSE = deserializeSymbols.parse(globals.DATA_DIR + "NYSE.csv");
         for (int i = 0; i < oNYSE.size(); i++) {
-            symbolType y = new symbolType(oNYSE.get(i).getSymbol(),oNYSE.get(i).getName(), oNYSE.get(i).getSector(), oNYSE.get(i).getIndustry());
+            symbolType y = new symbolType(oNYSE.get(i).getSymbol().replace(" ", ""),oNYSE.get(i).getName(), oNYSE.get(i).getSector(), oNYSE.get(i).getIndustry());
             globals.NYSE.getCompanyList().add(y);
         }
 
         //NASDAQ
         List<companyListType> oNASDAQ = deserializeSymbols.parse(globals.DATA_DIR + "NASDAQ.csv");
         for (int i = 0; i < oNASDAQ.size(); i++) {
-            symbolType z = new symbolType(oNASDAQ.get(i).getSymbol(),oNASDAQ.get(i).getName(), oNASDAQ.get(i).getSector(), oNASDAQ.get(i).getIndustry());
+            symbolType z = new symbolType(oNASDAQ.get(i).getSymbol().replace(" ", ""),oNASDAQ.get(i).getName(), oNASDAQ.get(i).getSector(), oNASDAQ.get(i).getIndustry());
             globals.NASDAQ.getCompanyList().add(z);
         }
+    }
+
+    public static void sort()
+    {
+        Collections.sort(globals.AMEX.getCompanyList(), Comparator.comparing(symbolType::getSymbol));
+        Collections.sort(globals.NASDAQ.getCompanyList(), Comparator.comparing(symbolType::getSymbol));
+        Collections.sort(globals.NYSE.getCompanyList(), Comparator.comparing(symbolType::getSymbol));
     }
 }
