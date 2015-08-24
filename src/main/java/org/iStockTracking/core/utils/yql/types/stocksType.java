@@ -1,6 +1,8 @@
 package org.iStockTracking.core.utils.yql.types;
 
+import java.text.*;
 import java.util.Date;
+import java.util.Locale;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -55,8 +57,18 @@ public class stocksType {
 	/**
 	 * @param start the start to set
 	 */
-	public void setStart(Date start) {
-		this.start = start;
+	public void setStart(String start)
+		throws ParseException
+	{
+		if (start.contains("NaN")){
+			start = start.replace("NaN-","");
+			start += "-01";
+		}
+
+		DateFormat format = new SimpleDateFormat("yyyy-mm-dd", Locale.ENGLISH);
+		Date d = format.parse(start);
+
+		this.start = d;
 	}
 
 	/**
@@ -69,7 +81,17 @@ public class stocksType {
 	/**
 	 * @param end the end to set
 	 */
-	public void setEnd(Date end) {
-		this.end = end;
+	public void setEnd(String end)
+		throws Exception
+	{
+		if (end.contains("NaN")){
+			end = end.replace("NaN-","");
+			end += "-01";
+		}
+
+		DateFormat format = new SimpleDateFormat("yyyy-mm-dd", Locale.ENGLISH);
+		Date d = format.parse(end);
+
+		this.end = d;
 	}
 }

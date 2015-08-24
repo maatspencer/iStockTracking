@@ -1,54 +1,4 @@
-	select * from yahoo.finance.dividendhistory where symbol = "KO" and startDate = "1962-01-01" and endDate = "2013-12-31"
-	
-	    {
-     "Symbol": "KO",
-     "Date": "1979-03-13",
-     "Dividends": "0.010210"
-    },
-    {
-     "Symbol": "KO",
-     "Date": "1978-11-27",
-     "Dividends": "0.009060"
-    },
-    {
-     "Symbol": "KO",
-     "Date": "1978-09-08",
-     "Dividends": "0.009060"
-    },
-    {
-     "Symbol": "KO",
-     "Date": "1978-06-12",
-     "Dividends": "0.009060"
-    },
-	
-	
-	select * from yahoo.finance.industry where id="112"
-	
-	{
-      "name": "Agrium\nInc",
-      "symbol": "AGU.DE"
-     },
-     {
-      "name": "Agrium\nInc",
-      "symbol": "AGU.TO"
-     },
-     {
-      "name": "Agrium\nInc.",
-      "symbol": "AGU"
-     },
-     {
-      "name": "Aimco\nPesticides Ltd",
-      "symbol": "AIMCO.BO"
-     },
-     {
-      "name": "American\nVanguard Corp.",
-      "symbol": "AVD"
-     },
-     {
-      "name": "Arcadia\nBiosciences, Inc.",
-      "symbol": "RKDA"
-     },
-	 
+ 
 	 select * from yahoo.finance.quant where symbol in ("YHOO")
 	 
 	   "results": {
@@ -176,16 +126,6 @@
      "Volume": "11164943",
      "StockExchange": "NMS"
 	 
-	 select * from yahoo.finance.stocks where symbol="yhoo"
-	 
-	   },
-  "results": {
-   "stock": {
-    "symbol": "yhoo",
-    "CompanyName": null,
-    "start": "1996-04-12",
-    "end": "2015-07-19"
-   }
    
    http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=nasdaq&render=download 
    http://www.nasdaq.com/screening/companies-by-name.aspx?letter=0&exchange=amex&render=download

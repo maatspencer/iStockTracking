@@ -33,9 +33,9 @@ public class dataQuery {
     }
 
     /**
-     * Simple YQL query
+     * Simple YQL queryBase
      * @param strQuery example: "select * from geo.oceans"
-     * @return raw query results
+     * @return raw queryBase results
      * @throws Exception
      */
     public static String queryToString(String strQuery) throws Exception {
@@ -46,10 +46,10 @@ public class dataQuery {
     }
 
     /**
-     * Simple YQL query utilizing a @name variable
+     * Simple YQL queryBase utilizing a @name variable
      * @param strQuery ex: "select * from geo.oceans where name=@name"
-     * @param withVariable definition for @name in the query
-     * @return raw query results
+     * @param withVariable definition for @name in the queryBase
+     * @return raw queryBase results
      * @throws Exception
      */
     public static String queryToString(String strQuery, String withVariable) throws Exception {
@@ -61,7 +61,7 @@ public class dataQuery {
     }
 
     /**
-     * YQL query (XML Format)
+     * YQL queryBase (XML Format)
      * @param strQuery example: "select * from geo.oceans"
      * @return raw XML results
      * @throws Exception
@@ -76,9 +76,9 @@ public class dataQuery {
     }
 
     /**
-     * YQL query (XML Format) utilizing a @name variable
+     * YQL queryBase (XML Format) utilizing a @name variable
      * @param strQuery ex: "select * from geo.oceans where name=@name"
-     * @param withNameVariable definition for @name in the query
+     * @param withNameVariable definition for @name in the queryBase
      * @return raw XML results
      * @throws Exception
      */
@@ -93,7 +93,7 @@ public class dataQuery {
     }
 
     /**
-     * YQL query (JSON Format)
+     * YQL queryBase (JSON Format)
      * @param strQuery example: "select * from geo.oceans"
      * @return raw JSON results
      * @throws Exception
@@ -108,9 +108,9 @@ public class dataQuery {
     }
 
     /**
-     * YQL query (JSON Format) utilizing a @name variable
+     * YQL queryBase (JSON Format) utilizing a @name variable
      * @param strQuery ex: "select * from geo.oceans where name=@name"
-     * @param withNameVariable definition for @name in the query
+     * @param withNameVariable definition for @name in the queryBase
      * @return raw JSON results
      * @throws Exception
      */
@@ -160,7 +160,7 @@ public class dataQuery {
         return historicArr;
     }
 
-    public static cashflowType cashflowToObject(String strQuery) throws Exception {
+    public static List<cashflowType> cashflowToObject(String strQuery) throws Exception {
         YqlQuery query = new YqlQuery(strQuery);
         query.setDiagnostics(false);
         query.setFormat(ResultFormat.JSON);
@@ -170,10 +170,9 @@ public class dataQuery {
                 result.getContentAsMappedObject(
                         new TypeReference<QueryResultType<cashflowArrayType>>() {});
 
-        cashflowType cashflowResult = new cashflowType();
+        List<cashflowType> cashflowResult = new ArrayList<>();
         for (cashflowType item : mappedResult.getResults().getCashflow()){
-           cashflowResult.setSymbol(item.getSymbol());
-            cashflowResult.setTimeframe(item.getTimeframe());
+           cashflowResult.add(item);
         }
 
         return cashflowResult;

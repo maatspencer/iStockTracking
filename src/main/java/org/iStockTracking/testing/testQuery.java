@@ -45,11 +45,16 @@ public class testQuery {
             }
 
             // Test of the cashflow type
-            cashflowType cashflowTest = dataQuery.cashflowToObject("SELECT * FROM yahoo.finance.cashflow WHERE symbol='AAPL'");
+            List<cashflowType> cashflowTest = dataQuery.cashflowToObject("SELECT * FROM yahoo.finance.cashflow WHERE symbol='AAPL'");
 
-            System.out.println("Symbol: " + cashflowTest.getSymbol());
-            System.out.println("Timeframe: " + cashflowTest.getTimeframe());
-            System.out.println();
+            count = cashflowTest.size();
+
+            System.out.println("Count: " + count);
+            for (int i = 0; i < count; i++) {
+                System.out.println("Symbol: " + cashflowTest.get(i).getSymbol());
+                System.out.println("Timeframe: " + cashflowTest.get(i).getTimeframe());
+                System.out.println();
+            }
 
             // Test of the dividendhistory type
             List<dividendHistoryType> dividendHistoryTest = dataQuery.dividendHistoryToObjectArray("select * from yahoo.finance.dividendhistory where symbol = \"KO\" and startDate = \"1962-01-01\" and endDate = \"2013-12-31\"");

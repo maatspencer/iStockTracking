@@ -1,9 +1,13 @@
 <component name="ArtifactManager">
-  <artifact build-on-make="true" name="iStockTracking:jar">
+  <artifact name="iStockTracking:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/iStockTracking_jar</output-path>
     <root id="root">
       <element id="archive" name="iStockTracking.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/main/META-INF/MANIFEST.MF" />
+        </element>
         <element id="module-output" name="iStockTracking" />
+        <element id="dir-copy" path="$PROJECT_DIR$/src/main/resources" />
       </element>
       <element id="directory" name="lib">
         <element id="library" level="project" name="com.opencsv:opencsv:3.4" />

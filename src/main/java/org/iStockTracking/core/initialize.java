@@ -3,7 +3,7 @@ package org.iStockTracking.core;
 import org.iStockTracking.core.types.stockExchangeType;
 import org.iStockTracking.core.types.symbolType;
 import org.iStockTracking.core.utils.IO.OS;
-import org.iStockTracking.core.utils.csv.symbolList;
+import org.iStockTracking.core.data.qSymbolList;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -22,13 +22,13 @@ public class initialize {
         createMarketObjects();
 
         //HTTP GET Request for the stock symbol csv files
-        symbolList.getHTTP();
+        qSymbolList.getHTTP();
 
         //Parse csv file to objects
-        symbolList.map();
+        qSymbolList.map();
 
         //Sort the companyLists
-        symbolList.sort();
+        qSymbolList.sort();
 
     }
 
