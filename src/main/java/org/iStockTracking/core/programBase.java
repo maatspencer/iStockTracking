@@ -1,9 +1,11 @@
 package org.iStockTracking.core;
 
-import org.iStockTracking.core.data.qQueryStrings;
-import org.iStockTracking.core.data.qStocks;
-import org.iStockTracking.core.data.queryBase;
-import org.iStockTracking.core.forms.splashScreenFrm;
+import org.iStockTracking.core.data.*;
+import org.iStockTracking.core.forms.splashScreenMain;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Matt on 7/13/2015.
@@ -11,7 +13,20 @@ import org.iStockTracking.core.forms.splashScreenFrm;
 public class programBase {
 
     public static void main(String[] args) throws Exception {
-        splashScreenFrm loadFrm = new splashScreenFrm();
+
+        // add the splash screen on a new thread
+        Thread t1 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    splashScreenMain.add();
+                } catch (IOException ex) {
+                    Thread t = Thread.currentThread();
+                    t.getUncaughtExceptionHandler().uncaughtException(t, ex);
+                }
+            }
+        });
+        t1.start();
 
         // Initialize Database and Settings
         initialize.start();
@@ -21,6 +36,12 @@ public class programBase {
          */
         // Create YQL Client
         queryBase.init();
+
+        // Create List of Markets
+        List<queryBase.Market> markets = new ArrayList<>();
+        markets.add(queryBase.Market.AMEX);
+        markets.add(queryBase.Market.NASDAQ);
+        markets.add(queryBase.Market.NYSE);
 
         /**
         * Build Strings for Query Builder i.e. ("AAMC","AAU"....,"MGH")
@@ -34,21 +55,39 @@ public class programBase {
         /**
          * Add timeframe constant from cashflowobject to each symbol
          */
-        //qCashflow.build(queryBase.Market.AMEX);
-        //qCashflow.build(queryBase.Market.NASDAQ);
-        //qCashflow.build(queryBase.Market.NYSE);
+        for (int i = 0; i< markets.size(); i++){
+            queryBase.Market m = markets.get(i);
+            Thread t = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        qCashflow.build(m);
+                    } catch (Exception ex) {
+                        Thread t = Thread.currentThread();
+                        t.getUncaughtExceptionHandler().uncaughtException(t, ex);
+                    }
+                }
+            });
+            t.start();
+        }
 
         /**
          * Add the start and end date constants from stocksobject to each symbol
          */
-        qStocks.build((queryBase.Market.AMEX));
-        qStocks.build((queryBase.Market.NASDAQ));
-        qStocks.build((queryBase.Market.NYSE));
-
-        for(int i=0; i < globals.NYSE.getCompanyList().size(); i++){
-            System.out.print(globals.NYSE.getCompanyList().get(i).getSymbol() + ", ");
-            System.out.print(globals.NYSE.getCompanyList().get(i).getStartDate() + ", ");
-            System.out.println(globals.NYSE.getCompanyList().get(i).getEndDate());
+        for (int i = 0; i< markets.size(); i++){
+            queryBase.Market m = markets.get(i);
+            Thread t = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    try {
+                        qStocks.build(m);
+                    } catch (Exception ex) {
+                        Thread t = Thread.currentThread();
+                        t.getUncaughtExceptionHandler().uncaughtException(t, ex);
+                    }
+                }
+            });
+            t.start();
         }
 
         // Close YQL Client

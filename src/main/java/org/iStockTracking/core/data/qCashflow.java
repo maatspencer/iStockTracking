@@ -1,5 +1,6 @@
 package org.iStockTracking.core.data;
 
+import org.iStockTracking.core.forms.splashScreenMain;
 import org.iStockTracking.core.globals;
 import org.iStockTracking.core.utils.yql.dataQuery;
 import org.iStockTracking.core.utils.yql.types.cashflowType;
@@ -65,5 +66,6 @@ public class qCashflow {
 
 
         }
+        splashScreenMain.progressTick = splashScreenMain.at.getAndAdd(5);
     }
 }

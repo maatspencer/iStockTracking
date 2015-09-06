@@ -82,7 +82,7 @@ public class dataQuery {
      * @return raw XML results
      * @throws Exception
      */
-    public static String queryToXML(String strQuery, String withNameVariable) throws Exception {
+    public static String queryToXML(String strQuery, String withNameVariable) throws Exception{
         YqlQuery query = new YqlQuery(strQuery);
         query.addVariable("name", withNameVariable);
         query.setDiagnostics(true);

@@ -1,5 +1,6 @@
 package org.iStockTracking.core;
 
+import org.iStockTracking.core.forms.splashScreenMain;
 import org.iStockTracking.core.types.stockExchangeType;
 import org.iStockTracking.core.types.symbolType;
 import org.iStockTracking.core.utils.IO.OS;
@@ -30,6 +31,7 @@ public class initialize {
         //Sort the companyLists
         qSymbolList.sort();
 
+        splashScreenMain.progressTick = splashScreenMain.at.getAndAdd(2);
     }
 
     /**

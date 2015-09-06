@@ -1,5 +1,6 @@
 package org.iStockTracking.core.data;
 
+import org.iStockTracking.core.forms.splashScreenMain;
 import org.iStockTracking.core.globals;
 
 import java.util.ArrayList;
@@ -117,5 +118,6 @@ public class qQueryStrings {
                 break;
             }
         }
+        splashScreenMain.progressTick = splashScreenMain.at.getAndAdd(2);
     }
 }
